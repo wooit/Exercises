@@ -1,0 +1,13 @@
+Une agence de travail temporaire vous demande de produire un site en symfony (4 ou 5 selon votre choix) pour présenter au public les annonces qu'elle propose.
+chaque annonce est qualifiée et présentée comme suit :
+- une référence propre à l'entreprise (pattern : 3lettres + 3chiffres)
+- un titre (descriptif court de l'emploi)
+- un descriptif long (texte)
+- des tags correspondant au niveau de qualification requis (ex : SANS QUALIF , BEP, BAC, BAC+3 ...)
+- des catégories correspondant aux divers emplois (ex : bâtiment , transport, medico-social , informatique, ...)
+- une rémunération proposée par l'employeur (ex : 1200 € / mois  , 60€ / jour ...)
+la page d'accueil présentera la liste de toutes les annonces sous forme de bandeaux horizontaux ,
+il n'y a pas de page spécifique pour chaque annonce.
+Il y a par contre deux listes (tags et catégories) qui permettront d'afficher,
+en cliquant sur l'un des éléments, uniquement les annonces issues de ces critères (non cumulables) .
+Un accès admin sera prévu à une URL spécifique (avec une authentification par mdp) pour pouvoir gérer l'ensemble des annonces (ajout/modification/suppression) des annonces (les nouveaux tags ou les nouvelles catégories seront directement ajoutées si elle ne sont pas deja présentes dans la base de données) donc on se contentera de présenter un simple champ de saisie au lieu d'un menu select
